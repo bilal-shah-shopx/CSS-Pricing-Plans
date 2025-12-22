@@ -1,0 +1,160 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0);
+  box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1{
+    text-align: center;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  justify-items: center;     
+  align-items: center;
+}
+
+.limited-card, .basic-card, .brilliant-card {
+   border: 2px solid #ccc;
+  text-align: center;
+  border-radius: 12px;
+    width: 300px;
+    padding: 20px;
+}
+
+.limited-card{
+    margin-right: -210px
+}
+
+.basic-card{
+    margin-left: -210px;
+}
+
+.brilliant-card {
+  height: 470px;   
+   border: 3px solid green;
+}
+
+.rounded-border{
+    margin: 40px 0px;
+}
+
+.rounded-border strong{
+    position: relative;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 4px 10px;
+    color: green;
+    font-size: small;
+}
+
+.rounded-border strong::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -50px;      
+    width: 50px;       
+    height: 1px;
+    background: #ccc;
+}
+
+.rounded-border strong::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -50px;      
+    width: 50px;       
+    height: 1px;
+    background: #ccc;
+}
+
+main .container{
+    padding: 20px;
+    border: 2px solid green;
+    text-align: center;
+}
+
+.title h2{
+    opacity: 0.8;
+}
+
+.title strong, .parent strong{
+    opacity: 0.6;
+}
+
+.title span, .parent span{
+    opacity: 0.6;
+}
+
+.parent{
+    text-align: left; position: relative
+}
+
+.bullet{
+    color: green;
+}
+
+.btn button{
+    padding: 10px 15px;
+    border-radius: 6px;
+    border:none;
+    color: green;
+        font-size: 16px;
+    cursor: pointer;
+}
+
+.brilliant-btn button{
+    padding: 10px 15px;
+    border-radius: 6px;
+    border:none;
+    color: white;
+    background-color: green;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.brilliant-btn, .btn{
+    margin: 30px 0px 15px;
+}
+
+.btn button:hover{
+    color: white;
+    background-color: green;
+}
+
+header{
+    margin-top: 30px;
+}
+
+footer{
+    margin-bottom: 30px;
+}
+
+footer .container span{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+footer .container a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+footer .container a:hover{
+    color: mediumseagreen
+}
