@@ -121,7 +121,7 @@ li .list-item {
     left: 9px;
     font-size: 1.1rem;
     color: white;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.8px;
 }
 
 .rounded-border {
@@ -220,6 +220,11 @@ li .list-item {
     .cards {
         margin: 24px auto;
     }
+
+    p {
+        max-width: 90%;
+        margin: auto;
+    }
 }
 
 @media (max-width: 384px) {
@@ -235,6 +240,11 @@ li .list-item {
     .title {
         font-size: 24px;
     }
+
+    p {
+        max-width: 90%;
+        margin: auto;
+    }
 }
 
 @media (max-width: 375px) {
@@ -242,8 +252,10 @@ li .list-item {
         font-size: 30px;
     }
 
-    .footer-text p {
-        font-size: 15px;
+    p {
+        font-size: 17px;
+        max-width: 90%;
+        margin: auto;
     }
 }
 
