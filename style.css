@@ -23,6 +23,7 @@ h2 {
 }
 
 p {
+    margin: 0;
     font-size: 18px;
     line-height: 28px;
     color: rgba(22, 28, 45, 0.7);
@@ -39,7 +40,7 @@ a:hover {
 }
 
 ul {
-    margin: 20px 0 0;
+    margin: 20px 0 20px -3px;
     padding: 0;
     text-align: left;
 }
@@ -52,9 +53,13 @@ li {
     opacity: 0.85;
 }
 
+li .list-item {
+    margin-left: 0.7px;
+}
+
 .pricing-plans {
     min-height: 100vh;
-    padding: 25px 40px;
+    padding: 40px;
     display: grid;
     grid-template-rows: 1fr auto 1fr;
     justify-content: center;
@@ -114,28 +119,30 @@ li {
     position: absolute;
     top: 5px;
     left: 9px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: white;
+    -webkit-text-stroke-width: 1px;
 }
 
 .rounded-border {
-    margin: 33px 0 45px;
+    margin: 30px 0 39px;
     display: flex;
     align-items: center;
 }
 
 .rounded-border strong {
-    padding: 5px 20px;
-    font-size: 14.3px;
+    padding: 5px 19.61px;
+    font-size: 14.4px;
     color: #0ABF53;
     border: 1px solid #E8E8E8;
-    border-radius: 12px;
+    border-radius: 14px;
     white-space: nowrap;
 }
 
 .rounded-border .line {
     flex: 1;
     height: 1px;
+    margin-top: 6.5px;
     background: #dedede;
 }
 
@@ -146,11 +153,11 @@ li {
 
 .bullet {
     display: inline-block;
-    width: 0.4em;
-    height: 0.4em;
+    width: 0.45em;
+    height: 0.45em;
     margin: 0 4px 2px 0;
-    border-right: 1.5px solid #0ABF53;
-    border-bottom: 1.5px solid #0ABF53;
+    border-right: 1.9px solid #0ABF53;
+    border-bottom: 1.9px solid #0ABF53;
     transform: rotate(-45deg);
 }
 
