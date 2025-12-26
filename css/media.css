@@ -1,0 +1,59 @@
+/* Tablet */
+@media screen and (max-width: 980px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 350px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card {
+        width: 350px;
+        height: 424px;
+    }
+
+    .cards .brilliant {
+        height: 506.5px;
+    }
+
+    .pricing-plans {
+        padding: 30px 15px;
+        gap: 25px
+    }
+
+    .pricing-plans h1 {
+        font-size: 40px;
+    }
+
+    .card h2 {
+        font-size: 30px;
+    }
+
+    .footer-text p {
+        font-size: 17px;
+        max-width: 95%;
+        margin: auto;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* Large Screens*/
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1140px;
+    }
+}

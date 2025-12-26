@@ -1,7 +1,6 @@
-
 @font-face {
     font-family: custom-font;
-    src: url(fonts/Kumbh_Sans/KumbhSans-VariableFont_YOPQ\,wght.ttf);
+    src: url(../fonts/Kumbh_Sans/KumbhSans-VariableFont_YOPQ\,wght.ttf);
 }
 
 * {
@@ -127,13 +126,13 @@ body {
     -webkit-text-stroke-width: 0.8px;
 }
 
-.card .top{
+.card .top {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.card .name-price{
+.card .name-price {
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -151,7 +150,7 @@ body {
     color: #0ABF53;
     border: 1px solid #E8E8E8;
     border-radius: 14px;
-    white-space: nowrap;  
+    white-space: nowrap;
 }
 
 .card .rounded-border .line {
@@ -174,7 +173,7 @@ body {
 }
 
 
-.card .content{
+.card .content {
     display: flex;
     flex-direction: column;
     gap: 30px
@@ -192,7 +191,7 @@ body {
     cursor: pointer;
     background-color: #F6F6F6;
     color: #0ABF53;
-    white-space: nowrap;    
+    white-space: nowrap;
 }
 
 .brilliant button {
@@ -207,131 +206,4 @@ body {
 
 .footer-text {
     text-align: center;
-}
-
-@media (max-width: 991px) {
-     .card{
-        width: 350px;
-    }
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 736px) {
-     .card{
-        width: 350px;
-    }
-
-    .cards {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-}
-
-@media (max-width: 480px) {
-    .pricing-plans {
-        padding: 40px 0px;
-        gap: 25px
-    }
-
-    .card{
-        width: 350px;
-    }
-
-    .pricing-plans h1 {
-        font-size: 35px;
-    }
-
-    .footer-text p{
-        max-width: 80%;
-        margin: auto;
-    }
-}
-
-@media (max-width: 384px) {
-    .pricing-plans {
-        padding: 30px 15px;
-        gap: 25px
-    }
-
-    .pricing-plans h1 {
-        font-size: 35px;
-    }
-
-    .card h2 {
-        font-size: 25px;
-    }
-
-    .card{
-        height: 424px;
-    }
-
-    .cards .brilliant{
-        height: 506.5px;
-    }
-
-    .cards .card {
-        width: 100%;
-    }
-
-    .footer-text p{
-        max-width: 95%;
-        margin: auto;
-    }
-}
-
-@media (max-width: 375px) {
-    .pricing-plans {
-        padding: 30px 15px;
-        gap: 25px
-    }
-
-    .pricing-plans h1 {
-        font-size: 30px;
-    }
-
-    .card h2 {
-        font-size: 25px;
-    }
-
-    .card{
-        height: 424px;
-    }
-
-    .cards .brilliant{
-        height: 506.5px;
-    }
-
-    .footer-text p{
-        font-size: 17px;
-        max-width: 95%;
-        margin: auto;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-    .container {
-        max-width: 500px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .container {
-        max-width: 700px;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .container {
-        max-width: 900px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1100px;
-    }
 }
