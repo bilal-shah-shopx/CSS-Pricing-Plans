@@ -1,15 +1,3 @@
-/* Tablet */
-@media screen and (max-width: 980px) {
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .card {
-        width: 350px;
-    }
-}
-
 /* Mobile */
 @media screen and (max-width: 767px) {
     .cards {
@@ -19,7 +7,8 @@
     }
 
     .card {
-        width: 350px;
+        width: 100%;
+        max-width: 350px;
         height: 424px;
     }
 
@@ -48,6 +37,18 @@
 
     .container {
         max-width: 720px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 980px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 350px;
     }
 }
 
