@@ -1,3 +1,22 @@
+/* Large Screens*/
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 980px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 350px;
+    }
+}
+
 /* Mobile */
 @media screen and (max-width: 767px) {
     .cards {
@@ -30,8 +49,9 @@
     }
 
     .footer-text p {
-        font-size: 17px;
-        max-width: 95%;
+        font-size: 18px;
+        width: 100%;
+        max-width: 97%;
         margin: auto;
     }
 
@@ -40,21 +60,5 @@
     }
 }
 
-/* Tablet */
-@media screen and (max-width: 980px) {
-    .cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-    .card {
-        width: 350px;
-    }
-}
 
-/* Large Screens*/
-@media screen and (min-width: 1280px) {
-    .container {
-        max-width: 1140px;
-    }
-}
